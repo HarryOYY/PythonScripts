@@ -43,7 +43,9 @@ headers = {'Authorization': api_authorization,
                 'Content-Type':'application/json'}
 myobj = {"request_data":{}}
 
-issueResponse = requests.post('https://api-ndgov-xpanse.crtx.us.paloaltonetworks.com/public_api/v1/incidents/get_incidents', headers = headers, json = myobj)
+
+apiURL = "REPLACE WITH URL"
+issueResponse = requests.post(apiURL, headers = headers, json = myobj)
 print(issueResponse)
 issueData = issueResponse.text
 
