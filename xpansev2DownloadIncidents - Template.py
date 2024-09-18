@@ -69,7 +69,7 @@ while search_from < totalIssues:
     }
     }
 
-    issueResponse = requests.post('https://api-ndgov-xpanse.crtx.us.paloaltonetworks.com/public_api/v1/incidents/get_incidents', headers = headers, json = myobj)
+    issueResponse = requests.post('apiURL', headers = headers, json = myobj)
     issueData = issueResponse.text
     print("Issue Data")
     print(issueData)
